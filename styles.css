@@ -1,0 +1,23 @@
+:root {
+  --grid-size: 4;
+}
+
+.container {
+  width: 240px;
+  height: 240px;
+  margin: 20% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.box {
+  width: calc(240px / var(--grid-size));
+  height: calc(240px / var(--grid-size));
+}
+
+.box:hover {
+  background: blue;
+}
